@@ -1,9 +1,9 @@
-defaultNamespace: 'jenkins'
+defaultNamespace: "jenkins"
 helm:
   repo: "https://charts.jenkins.io"
   chart: "jenkins"
   version: "4.5.0"
-  releaseName: 'jenkins'
+  releaseName: "jenkins"
   valuesFiles:
     - "values.yaml"
 
