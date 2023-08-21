@@ -3,6 +3,7 @@ helm:
   repo: "https://charts.jenkins.io"
   chart: "jenkins"
   version: "4.5.0"
+  releaseName: 'jenkins'
   valuesFiles:
     - "values.yaml"
 
