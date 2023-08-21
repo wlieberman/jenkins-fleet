@@ -4,7 +4,7 @@ agent:
   additionalContainers: []
   alwaysPullImage: false
   annotations: {}
-  args: '${computer.jnlpmac} ${computer.name}'
+  #args: '${computer.jnlpmac} ${computer.name}'
   command: null
   componentName: jenkins-agent
   connectTimeout: 100
