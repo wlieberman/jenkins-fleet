@@ -259,10 +259,15 @@ controller:
   imagePullPolicy: Always
   imagePullSecretName: null
   ingress:
-    annotations: {}
+    annotations:
+      ingress.kubernetes.io/proxy-body-size: '0'
+      ingress.kubernetes.io/ssl-redirect: 'true'
+      nginx.ingress.kubernetes.io/proxy-body-size: '0'
+      nginx.ingress.kubernetes.io/ssl-redirect: 'true'
+      cert-manager.io/cluster-issuer: 'letsencrypt-prod'
     apiVersion: extensions/v1beta1
-    enabled: false
-    hostName: null
+    enabled: true
+    hostName: 'jenkins.billylieberman.com'
     labels: {}
     paths: []
     tls: null
