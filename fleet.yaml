@@ -1,0 +1,10 @@
+defaultNamespace: 'jenkins'
+helm:
+  repo: "https://charts.jenkins.io"
+  chart: "jenkins"
+  version: "4.5.0"
+  valuesFiles:
+    - "values.yaml"
+
+  labels:
+    app: "jenkins"
