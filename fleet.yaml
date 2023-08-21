@@ -7,5 +7,5 @@ helm:
   valuesFiles:
     - "values.yaml"
 
-  labels:
-    app: "jenkins"
+labels:
+  app: "jenkins"
